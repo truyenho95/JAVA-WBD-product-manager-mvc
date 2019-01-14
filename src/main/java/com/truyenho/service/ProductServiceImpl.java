@@ -3,19 +3,15 @@ package com.truyenho.service;
 import com.truyenho.model.Product;
 import com.truyenho.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 public class ProductServiceImpl implements ProductService {
+
   @Autowired
   private ProductRepository productRepository;
 
   public ProductServiceImpl() {
-  }
-
-  public ProductServiceImpl(ProductRepository productRepository) {
-    this.productRepository = productRepository;
   }
 
   @Override

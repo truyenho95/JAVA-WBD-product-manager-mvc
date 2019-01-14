@@ -15,12 +15,11 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile group: 'javax.servlet', name: 'servlet-api', version: '2.5'
+    // https://mvnrepository.com/artifact/com.hynnet/javax.servlet-api
+    compile group: 'com.hynnet', name: 'javax.servlet-api', version: '3.1.0'
     // https://mvnrepository.com/artifact/org.springframework/spring-context
     compile group: 'org.springframework', name: 'spring-context', version: '4.3.18.RELEASE'
     // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
     compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.18.RELEASE'
-    // https://mvnrepository.com/artifact/jstl/jstl
-    compile group: 'jstl', name: 'jstl', version: '1.2'
-
+    compile group: 'org.thymeleaf', name: 'thymeleaf-spring4', version: '3.0.4.RELEASE'
 }
